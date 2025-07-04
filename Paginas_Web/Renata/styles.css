@@ -1,0 +1,582 @@
+/* Estilos Generales */
+:root {
+    --primary-color: #132544; /* Azul oscuro - Color principal */
+    --secondary-color: #ffffff; /* Blanco - Color secundario, para textos claros */
+    --dark-color: #132544; /* Azul oscuro - Usado para fondos o textos oscuros */
+    --light-color: #3b5c95; /* Azul medio - Para elementos más claros o detalles */
+    --text-color: #305390; /* Azul más claro - Para el texto general */
+    --border-radius: 5px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Ajuste para un mejor control del ancho */
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+h1, h2, h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 10px;
+    color: var(--secondary-color); /* Párrafos en blanco para contrastar con el fondo oscuro */
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color); /* Enlaces por defecto en blanco */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--light-color); /* Un azul más claro al pasar el ratón */
+}
+
+img {
+    max-width: 100%;
+    height: 100px;
+    display: block;
+}
+
+/* --- Botones --- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Añadida transición para transform y box-shadow */
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Animación de los botones al pasar el ratón (similar a la del menú) */
+.btn:hover {
+    transform: scale(1.05); /* Ligeramente más grande */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color); /* Fondo blanco */
+    color: var(--dark-color); /* Texto azul oscuro */
+    border: 2px solid var(--primary-color); /* Borde azul oscuro */
+}
+
+.btn-primary:hover {
+    background-color: var(--light-color); /* Fondo azul más claro al pasar el ratón */
+    color: var(--secondary-color); /* Texto blanco */
+    border-color: var(--light-color); /* Borde azul más claro */
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color); /* Fondo blanco */
+    color: var(--light-color); /* Texto azul más claro */
+    border: 2px solid var(--primary-color); /* Borde azul oscuro */
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color); /* Fondo azul oscuro al pasar el ratón */
+    color: var(--secondary-color); /* Texto blanco */
+    border-color: var(--primary-color); /* Borde azul oscuro */
+}
+
+.btn-map {
+    background-color: var(--light-color); /* Fondo azul claro para mapas */
+    color: var(--secondary-color); /* Texto blanco */
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.btn-map:hover {
+    background-color: var(--dark-color); /* Azul oscuro al pasar el ratón */
+    color: var(--secondary-color); /* Texto blanco */
+}
+
+
+/* --- Header --- */
+header {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img { /* Estilo específico para la imagen del logo */
+    height: 70px; /* Ajusta el tamaño si es necesario */
+    width: auto;
+}
+
+.logo {
+    font-size: 1.8em; /* Mantengo este estilo por si el logo vuelve a ser texto */
+    font-weight: bold;
+    color: var(--secondary-color); /* Color del texto del logo en blanco */
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a:not(.btn) {
+    color: var(--secondary-color); /* Enlaces de navegación en blanco */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:not(.btn):hover {
+    color: var(--light-color); /* Color de hover para enlaces de navegación */
+    text-decoration: none;
+}
+
+/* Menú Toggle (para móviles) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color); /* Barras del menú en blanco */
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+/* Animación del icono de menú */
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* --- Hero Section --- */
+.hero {
+    /* Usando un fondo sólido o un degradado para el hero section si no hay imagen */
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* Si quieres una imagen de fondo para el hero, descomenta y actualiza la ruta */
+/*
+.hero {
+    background: url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+*/
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--secondary-color);
+}
+
+
+/* --- Sections generales --- */
+section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: var(--primary-color); /* Por defecto, el color primario */
+}
+
+section:nth-of-type(even) { /* Para alternar colores de fondo entre secciones */
+    background-color: var(--dark-color); /* Un azul más oscuro */
+}
+
+/* Asegurarse que los textos de las secciones impares sean blancos si el fondo es oscuro */
+section h2, section h3, section p {
+    color: var(--secondary-color);
+}
+
+
+/* --- Menu Section --- */
+.menu-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    gap: 30px;
+}
+
+.menu-category {
+    background-color: var(--secondary-color); /* Fondo blanco */
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.menu-category h3 {
+    color: var(--primary-color); /* Título de categoría azul oscuro */
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid var(--light-color); /* Borde azul claro */
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--light-color);
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.menu-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.menu-item h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--dark-color); /* Título del plato azul oscuro */
+    flex-grow: 1;
+    text-align: left;
+}
+
+.menu-item p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: var(--text-color); /* Descripción del plato azul claro */
+    text-align: left;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: var(--primary-color); /* Precio en azul oscuro */
+    font-size: 1.1em;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+.menu-note {
+    margin-top: 40px;
+    font-style: italic;
+    color: var(--light-color); /* Nota en azul claro */
+    font-size: 1.1em;
+}
+
+
+/* --- Ubicaciones Section --- */
+.location-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.location-item {
+    background-color: var(--dark-color); /* Fondo azul oscuro para cada ubicación */
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px var(--light-color); /* Sombra con tu light-color */
+    padding: 25px;
+    text-align: center;
+}
+
+
+.location-item h3 {
+    color: var(--secondary-color); /* Título de ubicación en blanco */
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.location-item p {
+    margin-bottom: 8px;
+    color: var(--secondary-color); /* Texto de ubicación en blanco */
+}
+
+.location-item a {
+    display: block;
+    margin-top: 15px;
+}
+
+
+/* --- Contacto Section --- */
+.contact-section {
+    background-color: var(--dark-color); /* Fondo azul oscuro */
+    color: var(--secondary-color); /* Texto blanco */
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    color: var(--secondary-color); /* Título en blanco */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1em;
+    color: var(--secondary-color); /* Párrafo en blanco */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="telefono"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid var(--light-color); /* Borde azul claro */
+    border-radius: var(--border-radius);
+    font-size: 1em;
+    background-color: var(--primary-color); /* Fondo del input azul oscuro */
+    color: var(--secondary-color); /* Texto del input blanco */
+}
+
+/* Placeholder color para mejor visibilidad */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Gris claro para el placeholder */
+}
+
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button.btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    /* Los estilos de .btn-primary ya se encargarán del color */
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+
+/* --- Media Queries para Responsividad (Móviles) --- */
+@media (max-width: 768px) {
+    header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--dark-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        padding: 20px 0;
+        z-index: 999;
+    }
+
+    nav .nav-links.active {
+        transform: translateX(0);
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .nav-links a:not(.btn) {
+        display: block;
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero .btn {
+        width: 80%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .menu-grid, .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu-item h4 {
+        font-size: 1.1em;
+    }
+
+    .menu-item p {
+        font-size: 0.85em;
+    }
+
+    .menu-item span {
+        font-size: 1em;
+    }
+
+    .contact-form {
+        padding: 0 15px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+}
