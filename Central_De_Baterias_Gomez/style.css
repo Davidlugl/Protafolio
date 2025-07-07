@@ -1,0 +1,574 @@
+/* Generales */
+:root {
+    --primary-color: #dd2c2b; /* Rojo del logo */
+    --secondary-color: #0d2443; /* Negro del logo */
+    --accent-color: #FFD700; /* Dorado/Amarillo para resaltar */
+    --text-dark: #333;
+    --text-light: #f4f4f4;
+    --bg-light-gray: #f9f9f9;
+    --bg-dark-gray: #2c3e50;
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-hegadin);
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-padded {
+    padding: 60px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.bg-light-gray {
+    background-color: var(--secondary-color);
+}
+
+.bg-dark-gray {
+    background-color: var(--bg-dark-gray);
+}
+
+.text-white {
+    color: var(--text-light);
+}
+
+/* Header */
+header {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 15px 0;
+    border-bottom: 5px solid var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.logo img {
+    height: 70px; /* Ajusta el tamaño del logo */
+    width: auto;
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+header h1 {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 2.2em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    color: var(--text-light);
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 1.8em;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.cart-icon i {
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.cart-icon i:hover {
+    color: var(--accent-color);
+}
+
+#cart-count {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 0.6em;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-weight: bold;
+    min-width: 20px; /* Asegura un tamaño mínimo */
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgb(13,36,67)), rgb(13,36,67), url('https://via.placeholder.com/1600x600?text=Fondo+Baterias') no-repeat center center/cover;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.hero h2 {
+    color: var(--text-light);
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
+/* Catálogo de Productos */
+.catalog-section {
+    background-color: var(--secondary-color);
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filters label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.filters select {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.filters select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta la imagen para que cubra el área */
+    border-bottom: 1px solid #eee;
+}
+
+.product-info {
+    padding: 20px;
+    flex-grow: 1; /* Permite que el contenido se expanda */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empuja el botón al final si hay espacio */
+}
+
+.product-info h3 {
+    font-size: 1.4em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.product-info ul {
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.product-info ul li {
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.product-info ul li strong {
+    color: var(--secondary-color);
+}
+
+.add-to-cart-btn {
+    display: block; /* Hace que ocupe todo el ancho disponible */
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: auto; /* Empuja el botón hacia la parte inferior */
+}
+
+.add-to-cart-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+/* Servicios Adicionales */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 3.5em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.service-item p {
+    color: #555;
+}
+
+/* Marcas */
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.brands-grid img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(80%); /* Para que los logos se vean más uniformes */
+    transition: filter 0.3s ease;
+}
+
+.brands-grid img:hover {
+    filter: grayscale(0%); /* Color al pasar el mouse */
+}
+
+/* Contacto */
+.contact-info {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-size: 1.3em;
+}
+
+.contact-info a {
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para el formulario */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-form h3 {
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-light);
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.contact-form .btn {
+    width: 100%;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 25px 0;
+    border-top: 5px solid var(--primary-color);
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: var(--text-light);
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .cart-icon {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .product-grid, .services-grid, .brands-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .product-item img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+/* Add this to your style.css file */
+
+.whatsapp-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn i {
+    margin-right: 10px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1DA851; /* Darker green on hover */
+}
