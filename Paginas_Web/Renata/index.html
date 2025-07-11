@@ -7,12 +7,14 @@
     <link rel="icon" href="../imagenes/Logo_Renata.svg" type="image/x-icon">  
     <link rel="stylesheet" href="../Renata/styles.css"> <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
+
+
 <body>
 
     <header>
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="../imagenes/Logo_Renata.svg " alt="Logo de Renata Tacos"> </a>
+                <img src="../Renata/imagenes/Logo_Renata.svg " alt="Logo de Renata Tacos"> </a>
             <nav>
                 <button class="menu-toggle" aria-label="Abrir menú">
                     <span></span>
@@ -25,11 +27,16 @@
                     <li><a href="#ubicaciones">Ubicaciones</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="https://www.rappi.com.co/restaurantes/900052748-renata-tacos" target="_blank" class="btn btn-primary">Pedir Ahora</a></li>
+                    <li>
+                        <select id="language-select" class="language-select">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <main>
         <section id="inicio" class="hero">
             <div class="container">
@@ -47,65 +54,63 @@
                     <div class="menu-category">
                         <h3>Tacos</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Res.png" alt="taco de res">
+                            <img src="../Renata/imagenes/Taco_Res.png" alt="taco de res">
                             <h4>Bistec de res</h4>
                             <p>Tierno bistec de res sazonado a la perfección, servido en tortilla de maíz.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Pollo.png" alt="taco de pollo">
+                            <img src="../Renata/imagenes/Taco_Pollo.png" alt="taco de pollo">
                             <h4>Pollo</h4>
                             <p>Delicioso pollo desmechado con el toque especial de Renata Tacos.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Carnitas.jpeg" alt="taco de carnitas">
+                            <img src="../Renata/imagenes/Taco_Carnitas.jpeg" alt="taco de carnitas">
                             <h4>Carnitas</h4>
                             <p>Suave y jugosa carne de cerdo confitada al estilo tradicional mexicano.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Quesadilla.png" alt="taco de quesadilla">
+                            <img src="../Renata/imagenes/Taco_Quesadilla.png" alt="taco de quesadilla">
                             <h4>Quesadilla</h4>
                             <p>Tortilla de maíz rellena de queso fundido, un clásico irresistible.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
+                            
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Cochinita.png" alt="taco de cochinita pibil">
+                            <img src="../Renata/imagenes/Taco_Cochinita.png" alt="taco de cochinita pibil">
                             <h4>Cochinita pibil</h4>
                             <p><b>Solo viernes</b><br>Cerdo marinado en achiote y cocinado lentamente, ¡sabor yucateco auténtico!.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
+                            
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Chicharon.png" alt="taco de chicharron">
+                            <img src="../Renata/imagenes/Taco_Chicharon.png" alt="taco de chicharron">
                             <h4>Chicharron</h4>
                             <p><b>Solo martes</b><br>Crujiente chicharrón con un toque de limón y cilantro, ideal para los amantes del sabor.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
+                            
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Cerdo_Pastor.png" alt="taco de cerdo al pastor">
+                            <img src="../Renata/imagenes/Taco_Cerdo_Pastor.png" alt="taco de cerdo al pastor">
                             <h4>Cerdo al pastor</h4>
                             <p>Carne de cerdo adobada y cocinada al pastor, con piña y especias.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
+                            
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Chorizo.png" alt="taco de chorizo">
+                            <img src="../Renata/imagenes/Taco_Chorizo.png" alt="taco de chorizo">
                             <h4>Chorizo mexicano</h4>
                             <p>Auténtico chorizo mexicano con ese toque picante y sabroso.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
+                            
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Berenjena.png" alt="Taco de berenjena y champiñones">
+                            <img src="../Renata/imagenes/Taco_Berenjena.png" alt="Taco de berenjena y champiñones">
                             <h4>Berenjena y champiñones</h4>
                             <p>Una opción vegetariana deliciosa con vegetales frescos y queso.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
+                            
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Taco_Arequipe.jpeg" alt="Taco de queso y arequipe">
+                            <img src="../Renata/imagenes/Taco_Arequipe.jpeg" alt="Taco de queso y arequipe">
                             <h4>Arequipe y queso</h4>
                             <p>Una dulce combinación de arequipe y queso, perfecto para un postre diferente.</p>
-                            <span>Unidad $5.600 <br> Con costra +$1.600</span>
+                            
                         </div>
+                        <h3>Unidad $5.600 / Con costra +$1.600</h3>
 
                     </div>
 
@@ -113,42 +118,42 @@
                     <div class="menu-category">
                         <h3>Tortas</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Torta_Res.png" alt="Torta de res">
+                            <img src="../Renata/imagenes/Torta_Res.png" alt="Torta de res">
                             <h4>Bistec de res</h4>
                             <p>Sándwich mexicano con tierno bistec de res, frijoles, aguacate y aderezos.</p>
-                            <span><center>$20.900</center><br>+ Totopos y Limonada 24.500</span>
+                            
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Torta_Pollo.png" alt="Torta de pollo">
+                            <img src="../Renata/imagenes/Torta_Pollo.png" alt="Torta de pollo">
                             <h4>Pollo</h4>
                             <p>Deliciosa torta rellena de jugoso pollo, lechuga, tomate y mayonesa.</p>
-                            <span><center>$20.900/</center><br>+Totopos y Limonada 24.500</span>
+                            
                         </div>
                            <div class="menu-item">
-                               <img src="../imagenes/Torta_Carnitas.jpeg" alt="Torta de carnitas">
+                               <img src="../Renata/imagenes/Torta_Carnitas.jpeg" alt="Torta de carnitas">
                                <h4>Carnitas</h4>
                                <p>Sándwich con carnitas tradicionales, aguacate, cebolla y cilantro.</p>
-                               <span>$20.900 / + Totopos y Limonada 24.500</span>
+                               
                            </div>
                            <div class="menu-item">
-                               <img src="../imagenes/Torta_Cerdo_Pastor.jpeg" alt="Torta de cerdo al pastor">
+                               <img src="../Renata/imagenes/Torta_Cerdo_Pastor.jpeg" alt="Torta de cerdo al pastor">
                                <h4>Cerdo al pastor</h4>
                                <p>Torta con cerdo al pastor, piña, cebolla y cilantro, una explosión de sabor.</p>
-                               <span>$20.900 / + Totopos y Limonada 24.500</span>
+                               
                            </div>
                            <div class="menu-item">
-                               <img src="../imagenes/Torta_Chorizo.png" alt="Torta de chorizo">
+                               <img src="../Renata/imagenes/Torta_Chorizo.png" alt="Torta de chorizo">
                                <h4>Chorizo mexicano</h4>
                                <p>Sándwich con chorizo mexicano, papas, crema y aguacate.</p>
-                               <span>$20.900 / + Totopos y Limonada 24.500</span>
+                               
                            </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Torta_Berenjena.jpeg" alt="Torta de berenjena y champiñones">
+                            <img src="../Renata/imagenes/Torta_Berenjena.jpeg" alt="Torta de berenjena y champiñones">
                             <h4>Berenjena y champiñones</h4>
                             <p>Opción vegetariana con berenjena, champiñones, queso y aguacate.</p>
-                            <span>$20.900 / + Totopos y Limonada 24.500</span>
+                            
                         </div>
-                        <h3>$20.900 / + Totopos y Limonada 24.500</h3>
+                        <h3>Unidad $20.900 / + Totopos y Limonada 24.500</h3>
 
                     </div>
 
@@ -156,29 +161,29 @@
                     <div class="menu-category">
                         <h3>Flautas</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Flautas_Pollo.png" alt="Flautas de Pollo">
+                            <img src="../Renata/imagenes/Flautas_Pollo.png" alt="Flautas de Pollo">
                             <h4>Flautas de Pollo</h4>
                             <p>Tortillas de maíz crujientes rellenas de pollo, servidas con crema y lechuga.</p>
-                            <span>$15.000</span>
+                            <span>$25.800 <br>con aguo o gaseosa <br>$30.200 </span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Flautas_Carne.png" alt="Flautas de Res">
+                            <img src="../Renata/imagenes/Flautas_Carne.png" alt="Flautas de Res">
                             <h4>Flautas de res</h4>
                             <p>Tortillas crujientes rellenas de sabrosa carne de res, con guarniciones frescas.</p>
-                            <span>$16.500</span>
+                            <span>$28.500 <br>con aguo o gaseosa <br>$33.900</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Flautas_Mixtas.png" alt="Flautas Mixtas">
+                            <img src="../Renata/imagenes/Flautas_Mixtas.png" alt="Flautas Mixtas">
                             <h4>Flautas mixtas </h4>
                             <p>Una combinación de flautas de pollo y res para que pruebes lo mejor de ambos.</p>
-                            <span>$16.500</span>
+                            <span>$28.500 <br>con aguo o gaseosa <br>$33.900</span>
                         </div>
                     </div>
 
                     <div class="menu-category">
                         <h3>Sopas</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Sopa_Pollo_Limon.png" alt="Sopa de Pollo y Limón">
+                            <img src="../Renata/imagenes/Sopa_Pollo_Limon.png" alt="Sopa de Pollo y Limón">
                             <h4>Sopa de pollo y limon </h4>
                             <p>Caldo reconfortante de pollo con un toque cítrico de limón y hierbas.</p>
                             <span>$12.600</span>
@@ -190,7 +195,7 @@
                         <h3>Plato especial</h3>
                        <center> <h4>Disponible de lunes a viernes hasta las 4:00PM</h4></center>
                         <div class="menu-item">
-                            <img src="../imagenes/Hamburgesa_Renata.png" alt="Burrito de Pollo">
+                            <img src="../Renata/imagenes/Hamburgesa_Renata.png" alt="Burrito de Pollo">
                             <h4>Hamburguesa Renata</h4>
                             <p>Nuestra hamburguesa especial con el toque mexicano de la casa.</p>
                             <span>$20.600</span>
@@ -201,126 +206,127 @@
                     <div class="menu-category">
                         <h3>Burritos</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Burrito_Pollo.jpeg" alt="Burrito de Pollo">
+                            <img src="../Renata/imagenes/Burrito_Pollo.jpeg" alt="Burrito de Pollo">
                             <h4>Burrito sencillo tinga Pollo</h4>
                             <p>Burrito clásico con pollo desmechado en salsa tinga, arroz y frijoles.</p>
-                            <span>$15.000</span>
+                            <span>$13.700</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Burrito_Berenjena.jpeg" alt="burrito de berenjena y champiñones">
+                            <img src="../Renata/imagenes/Burrito_Berenjena.jpeg" alt="burrito de berenjena y champiñones">
                             <h4>Burrito sencillo berenjena y champiñones</h4>
                             <p>Burrito vegetariano con berenjena, champiñones, arroz y frijoles.</p>
-                            <span>$16.500</span>
+                            <span>$15.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Burrito_Carnitas.jpeg" alt="burrito de carnitas">
+                            <img src="../Renata/imagenes/Burrito_Carnitas.jpeg" alt="burrito de carnitas">
                             <h4>Burrito sencillo carnitas</h4>
                             <p>Burrito con tiernas carnitas, arroz, frijoles y salsa.</p>
-                            <span>$15.000</span>
+                            <span>$16.400</span>
                         </div>
                         <h3>Combo burritos x2 (Totopos y gaseosa o agua)</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Burrito_Pollo.jpeg" alt="Burrito de Pollo">
+                            <img src="../Renata/imagenes/Burrito_Pollo.jpeg" alt="Burrito de Pollo">
                             <h4>Tinga</h4>
                             <p>Dos burritos de tinga de pollo acompañados de totopos y tu bebida favorita.</p>
-                            <span>$16.500</span>
+                            <span>$33.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Burrito_Berenjena.jpeg" alt="burrito de berenjena y champiñones">
+                            <img src="../Renata/imagenes/Burrito_Berenjena.jpeg" alt="burrito de berenjena y champiñones">
                             <h4>Berenjena y champiñones </h4>
                             <p>Dos burritos vegetarianos con berenjena y champiñones, totopos y bebida.</p>
-                            <span>$15.000</span>
+                            <span>$35.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Burrito_Carnitas.jpeg" alt="burrito de carnitas">
+                            <img src="../Renata/imagenes/Burrito_Carnitas.jpeg" alt="burrito de carnitas">
                             <h4>Carnitas</h4>
                             <p>Dos burritos de carnitas con totopos crujientes y una refrescante bebida.</p>
-                            <span>$16.500</span>
+                            <span>$36.500</span>
                         </div>
                     </div>
 
                     <div class="menu-category">
                         <h3>Gringas</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Gringa_REs.jpeg" alt="Burrito de Pollo">
+                            <img src="../Renata/imagenes/Gringa_REs.jpeg" alt="Burrito de Pollo">
                             <h4>Bistec de res</h4>
                             <p>Gringa con jugoso bistec de res y queso fundido en tortilla de harina.</p>
-                            <span>$15.000</span>
+                            
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Gringa_pollo.jpeg" alt="Gringa de Pollo">
+                            <img src="../Renata/imagenes/Gringa_pollo.jpeg" alt="Gringa de Pollo">
                             <h4>Pollo</h4>
                             <p>Gringa rellena de pollo desmechado y una generosa capa de queso derretido.</p>
-                            <span>$16.500</span>
+                            
                         </div>
                            <div class="menu-item">
-                               <img src="../imagenes/Gringa_Carnitas.jpeg" alt="Gringa de Carnitas">
+                               <img src="../Renata/imagenes/Gringa_Carnitas.jpeg" alt="Gringa de Carnitas">
                                <h4>Carnitas</h4>
                                <p>Gringa con nuestras deliciosas carnitas y queso, una combinación perfecta.</p>
-                               <span>$16.500</span>
+                               
                            </div>
                            <div class="menu-item">
-                               <img src="../imagenes/Gringas_Pastor.jpeg" alt="Gringa de Cerdo al Pastor">
+                               <img src="../Renata/imagenes/Gringas_Pastor.jpeg" alt="Gringa de Cerdo al Pastor">
                                <h4>Cerdo al pastor</h4>
                                <p>Gringa con cerdo al pastor, piña y queso, un toque tropical y sabroso.</p>
-                               <span>$16.500</span>
+                               
                            </div>
                            <div class="menu-item">
-                               <img src="../imagenes/Gringa_Chorizo.jpeg" alt="Gringa de Chorizo">
+                               <img src="../Renata/imagenes/Gringa_Chorizo.jpeg" alt="Gringa de Chorizo">
                                <h4>Chorizo mexicano</h4>
                                <p>Gringa con auténtico chorizo mexicano y queso fundido.</p>
-                               <span>$16.500</span>
+                               
                            </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Gringa_Berenjena.jpeg" alt="Gringa_Berenjena">
+                            <img src="../Renata/imagenes/Gringa_Berenjena.jpeg" alt="Gringa_Berenjena">
                             <h4>Berenjena y champiñones</h4>
                             <p>Gringa vegetariana con berenjena, champiñones y queso derretido.</p>
-                            <span>$16.500</span>
+                            
                         </div>
+                        <h3>$23.000</h3>
 
                     </div>
 
                     <div class="menu-category">
                         <h3>Adiciones</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Renachos.jpeg" alt="Renachos">
+                            <img src="../Renata/imagenes/Renachos.jpeg" alt="Renachos">
                             <h4>Renachos</h4>
                             <p>Nuestros nachos especiales con queso, jalapeños y tu elección de carne.</p>
-                            <span>$15.000</span>
+                            <span>$28.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Totopos_Guacamole.jpeg" alt="Totopos con Guacamole">
+                            <img src="../Renata/imagenes/Totopos_Guacamole.jpeg" alt="Totopos con Guacamole">
                             <h4>Totopos con guacamole</h4>
                             <p>Crujientes totopos acompañados de nuestro guacamole fresco y casero.</p>
-                            <span>$16.500</span>
+                            <span>$6.000</span>
                         </div>
                            <div class="menu-item">
-                               <img src="../imagenes/Totopos.jpeg" alt="totopos">
+                               <img src="../Renata/imagenes/Totopos.jpeg" alt="totopos">
                                <h4>Totopos</h4>
                                <p>Bolsa de crujientes totopos de maíz, perfectos para acompañar.</p>
-                               <span>$16.500</span>
+                               <span>$7.000</span>
                            </div>
                            <div class="menu-item">
-                               <img src="../imagenes/Guacamole.jpeg" alt="Guacamole">
+                               <img src="../Renata/imagenes/Guacamole.jpeg" alt="Guacamole">
                                <h4>Guacamole</h4>
                                <p>Porción extra de nuestro delicioso guacamole fresco.</p>
-                               <span>$16.500</span>
+                               <span>$6.000</span>
                            </div>
                            <div class="menu-item">
-                               <img src="../imagenes/Frijol negro.jpeg" alt="Frijol negro">
+                               <img src="../Renata/imagenes/Frijol negro.jpeg" alt="Frijol negro">
                                <h4>Frijol negro</h4>
                                <p>Porción de frijoles negros refritos, cremosos y llenos de sabor.</p>
-                               <span>$16.500</span>
+                               <span>$11.800</span>
                            </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Salsas.png" alt="Salsas">
+                            <img src="../Renata/imagenes/Salsas.png" alt="Salsas">
                             <h4>Salsa de frasco x 4oz</h4>
                             <p>Nuestras salsas caseras en presentación de 4oz para llevar el sabor a casa.</p>
-                            <span>$16.500</span>
+                            <span>$14.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Tortillas.png" alt="Tortillas">
-                            <h4>Paquete de tortillas</h4>
+                            <img src="../Renata/imagenes/Tortillas.png" alt="Tortillas">
+                            <h4>Paquete de tortillas (20 unidades) </h4>
                             <p>Un paquete de tortillas de maíz frescas para preparar tus propios tacos en casa.</p>
                             <span>$14.000</span>
                         </div>
@@ -329,31 +335,31 @@
                     <div class="menu-category">
                         <h3>Cerveza</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Coronita.jpeg" alt="Coronita">
+                            <img src="../Renata/imagenes/Coronita.jpeg" alt="Coronita">
                             <h4>Coronita</h4>
                             <p>Cerveza ligera y refrescante, ideal para acompañar tus tacos.</p>
                             <span>$6.900</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/butweiser.jpeg" alt="Mini Budweiser">
+                            <img src="../Renata/imagenes/butweiser.jpeg" alt="Mini Budweiser">
                             <h4>Mini Budweiser</h4>
                             <p>Cerveza clásica de cuerpo ligero en presentación mini.</p>
                             <span>$6.900</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Club_Colombia_.jpeg" alt="Club Colombia Dorada">
+                            <img src="../Renata/imagenes/Club_Colombia_.jpeg" alt="Club Colombia Dorada">
                             <h4>Club Colombia Dorada</h4>
                             <p>Cerveza dorada premium, suave y equilibrada.</p>
                             <span>$9.500</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Stella_Artois.jpeg" alt="Stella Artois">
+                            <img src="../Renata/imagenes/Stella_Artois.jpeg" alt="Stella Artois">
                             <h4>Stella Artois</h4>
                             <p>Cerveza lager europea con un sabor distintivo y refrescante.</p>
                             <span>$12.500</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Corona_Cero.jpeg" alt="Corona Cero">
+                            <img src="../Renata/imagenes/Corona_Cero.jpeg" alt="Corona Cero">
                             <h4>Corona Cero</h4>
                             <p>Disfruta el sabor de Corona sin alcohol, refrescante y ligera.</p>
                             <span>$12.000</span>
@@ -362,19 +368,19 @@
                     <div class="menu-category">
                         <h3>Bebidas</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Aguas.jpeg" alt="Agua Con/Sin gas">
+                            <img src="../Renata/imagenes/Aguas.jpeg" alt="Agua Con/Sin gas">
                             <h4>Agua Con/Sin gas </h4>
                             <p>Refrescante agua mineral para hidratarte.</p>
                             <span>$5.800</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Gaseosas.jpeg" alt="Gaseosa">
+                            <img src="../Renata/imagenes/Gaseosas.jpeg" alt="Gaseosa">
                             <h4>Gaseosa</h4>
                             <p>Variedad de gaseosas para acompañar tu comida.</p>
                             <span>$5.800</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Fuez_Tea.jpeg" alt="Fuze Tea">
+                            <img src="../Renata/imagenes/Fuez_Tea.jpeg" alt="Fuze Tea">
                             <h4>Fuze Tea</h4>
                             <p>Té frío refrescante con diferentes sabores.</p>
                             <span>$5.800</span>
@@ -383,31 +389,31 @@
                     <div class="menu-category">
                         <h3>Aguas Frescas</h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Agua_Horchata.jpeg" alt="Agua de Horchata">
+                            <img src="../Renata/imagenes/Agua_Horchata.jpeg" alt="Agua de Horchata">
                             <h4>Horchata</h4>
                             <p>Bebida tradicional de arroz con canela, dulce y refrescante.</p>
                             <span>$3.700</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Agua_Jamaica.jpeg" alt="Agua de Jamaica">
+                            <img src="../Renata/imagenes/Agua_Jamaica.jpeg" alt="Agua de Jamaica">
                             <h4>Jamaica</h4>
                             <p>Bebida natural de flor de Jamaica, un sabor único y vibrante.</p>
                             <span>$4.500</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Agua_Piña_yerbabuena.jpeg" alt="Piña yerbabuena">
+                            <img src="../Renata/imagenes/Agua_Piña_yerbabuena.jpeg" alt="Piña yerbabuena">
                             <h4>Piña yerbabuena</h4>
                             <p>Refrescante combinación de piña y hierbabuena.</p>
                             <span>$3.700</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Agua_Tamarindo.jpeg" alt="Tamarindo">
+                            <img src="../Renata/imagenes/Agua_Tamarindo.jpeg" alt="Tamarindo">
                             <h4>Tamarindo</h4>
                             <p>Bebida exótica y agridulce de tamarindo.</p>
                             <span>$3.700</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Limonada_Panela.jpeg" alt="Limonada de panela">
+                            <img src="../Renata/imagenes/Limonada_Panela.jpeg" alt="Limonada de panela">
                             <h4>Limonada de panela</h4>
                             <p>La clásica limonada colombiana con el toque dulce de la panela.</p>
                             <span>$2.500</span>
@@ -416,73 +422,73 @@
                     <div class="menu-category">
                         <h3>Destilados y mezclas </h3>
                         <div class="menu-item">
-                            <img src="../imagenes/Mezcal_400.jpeg" alt="Mezcal 400 conejos Botella">
+                            <img src="../Renata/imagenes/Mezcal_400.jpeg" alt="Mezcal 400 conejos Botella">
                             <h4>Mezcal 400 conejos Botella</h4>
                             <p>Botella de mezcal 400 Conejos, ideal para compartir y disfrutar.</p>
                             <span>$280.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Mezcal_400.jpeg" alt="Mezcal 400 conejos Trago">
+                            <img src="../Renata/imagenes/Mezcal_400.jpeg" alt="Mezcal 400 conejos Trago">
                             <h4>Mezcal 400 conejos Trago</h4>
                             <p>Un trago de mezcal 400 Conejos para saborear su carácter ahumado.</p>
                             <span>$27.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Tequila_1800.jpeg" alt="Tequila 1800 Reposado Botella">
+                            <img src="../Renata/imagenes/Tequila_1800.jpeg" alt="Tequila 1800 Reposado Botella">
                             <h4>Tequila 1800 Reposado Botella</h4>
                             <p>Botella de tequila 1800 Reposado, suave y con notas de agave.</p>
                             <span>$350.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Tequila_1800.jpeg" alt="Tequila 1800 Reposado Trago">
+                            <img src="../Renata/imagenes/Tequila_1800.jpeg" alt="Tequila 1800 Reposado Trago">
                             <h4>Tequila 1800 Reposado Trago</h4>
                             <p>Un trago de tequila 1800 Reposado, perfecto para degustar.</p>
                             <span>$38.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Tequila_Doble_Diamante.jpeg" alt="Tequila Doble Diamante Botella">
+                            <img src="../Renata/imagenes/Tequila_Doble_Diamante.jpeg" alt="Tequila Doble Diamante Botella">
                             <h4>Tequila Doble Diamante Botella</h4>
                             <p>Botella de tequila Doble Diamante, ideal para los amantes del buen tequila.</p>
                             <span>$500.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Tequila_Doble_Diamante.jpeg" alt="Tequila Doble Diamante Media">
+                            <img src="../Renata/imagenes/Tequila_Doble_Diamante.jpeg" alt="Tequila Doble Diamante Media">
                             <h4>Tequila Doble Diamante Trago</h4>
                             <p>Un trago de tequila Doble Diamante, una experiencia premium.</p>
                             <span>$53.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Antioqueño.jpeg" alt="Aguardiente Antioqueño Botella">
+                            <img src="../Renata/imagenes/Antioqueño.jpeg" alt="Aguardiente Antioqueño Botella">
                             <h4>Antioqueño Media </h4>
                             <p>Media botella de aguardiente Antioqueño, el sabor de Colombia.</p>
                             <span>$65.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Tequila_Jose_Cuervo.jpeg" alt="Tequila Jose Cuervo Botella">
+                            <img src="../Renata/imagenes/Tequila_Jose_Cuervo.jpeg" alt="Tequila Jose Cuervo Botella">
                             <h4>Tequila Jose Cuervo Botella</h4>
                             <p>Botella de tequila Jose Cuervo, un clásico para cualquier celebración.</p>
                             <span>$210.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Tequila_Jose_Cuervo.jpeg" alt="Tequila Jose Cuervo Media">
+                            <img src="../Renata/imagenes/Tequila_Jose_Cuervo.jpeg" alt="Tequila Jose Cuervo Media">
                             <h4>Tequila Jose Cuervo Media</h4>
                             <p>Media botella de tequila Jose Cuervo, la opción ideal para un grupo pequeño.</p>
                             <span>$110.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Tequila_Jose_Cuervo.jpeg" alt="Tequila Jose Cuervo Trago">
+                            <img src="../Renata/imagenes/Tequila_Jose_Cuervo.jpeg" alt="Tequila Jose Cuervo Trago">
                             <h4>Tequila Jose Cuervo Trago </h4>
                             <p>Un trago de tequila Jose Cuervo, el toque mexicano que necesitas.</p>
                             <span>$21.000</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Margarita.jpeg" alt="Margarita">
+                            <img src="../Renata/imagenes/Margarita.jpeg" alt="Margarita">
                             <h4>Margarita</h4>
                             <p>Clásico cóctel de tequila con limón y un borde de sal, fresco y vibrante.</p>
                             <span>$15.900</span>
                         </div>
                         <div class="menu-item">
-                            <img src="../imagenes/Paloma coctel.jpeg" alt="Paloma cóctel">
+                            <img src="../Renata/imagenes/Paloma coctel.jpeg" alt="Paloma cóctel">
                             <h4>Paloma cóctel </h4>
                             <p>Refrescante cóctel de tequila con refresco de toronja y un toque de limón.</p>
                             <span>$38.000</span>
@@ -504,7 +510,7 @@
                         <p>Lun a Jue 11:30AM - 10:00PM</p>
                         <p>Vier y Sab 11:30AM - 12:00AM</p>
                         <p>Dom y Fest 11:30AM - 8:00PM</p>
-                        <a href="https://maps.app.goo.gl/TUw4zL2d5UaC2Qd96" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/HVctHhtcfNWAfrZAA" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                     <div class="location-item">
                         <h3>RENATA 82</h3>
@@ -512,25 +518,25 @@
                         <p>Lun a Jue 11:30AM - 10:00PM</p>
                         <p>Vier y Sab 11:30AM - 12:00AM</p>
                         <p>Dom y Fest 11:30AM - 9:00PM</p>
-                        <a href="https://maps.app.goo.gl/9Z3X4Y9W2M9D2R2B6" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/K7sW7EPSDTdV3BCW9" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                     <div class="location-item">
-                        <h3>RENATA 85</h3>
+                        <h3>RENATA 83</h3>
                         <p>Carrera 14 # 85-22</p>
                         <p>Lun. a Jue 11:30AM - 10:00PM</p>
                         <p>Vier y Sab 11:30AM - 12:00AM</p>
                         <p>Dom y Fest Cerrado</p>
-                        <a href="https://maps.app.goo.gl/H4G5J6K7L8M9N0O1P" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/hBRE1CvRGfEx9VWM9" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                     
                     <div class="location-item">
-                        <h3>RENATA 83</h3>
+                        <h3>RENATA 85</h3>
                         <p>Carrera 13 # 83-92</p>
                         <p>Lun a Mier 11:30AM - 10:00PM</p>
                         <p>Jue 11:30AM - 11:00PM</p>
                         <p>Vie y Sáb 11:30am - 4:00AM</p>
                         <p>Dom y Fest 11:30AM - 8:00PM</p>
-                        <a href="https://maps.app.goo.gl/Q2W3E4R5T6Y7U8I9O" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/kdXVkadXrCPEdkrr9" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                     <div class="location-item">
                         <h3>RENATA 93</h3>
@@ -538,7 +544,7 @@
                         <p>Lun a Jue 11:30AM - 10:00PM</p>
                         <p>Vier y Sab 11:30AM - 11:00AM</p>
                         <p>Dom y Fest 11:30AM - 8:00PM</p>
-                        <a href="https://maps.app.goo.gl/A1S2D3F4G5H6J7K8L" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/QurATKtZz26pQKf3A" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                     <div class="location-item">
                         <h3>RENATA 116</h3>
@@ -546,7 +552,7 @@
                         <p>Lun a Jue 11:30AM - 10:00PM</p>
                         <p>Vier y Sab 11:30AM - 12:00AM</p>
                         <p>Dom y Fest Cerrado</p>
-                        <a href="https://maps.app.goo.gl/Z9X8C7V6B5N4M3L2K" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/YBWkH3Emq4NFjNSb9" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                     <div class="location-item">
                         <h3>RENATA 122</h3>
@@ -554,7 +560,7 @@
                         <p>Lun. a Jue 11:30AM - 10:00PM</p>
                         <p>Vier y Sab 11:30AM - 11:00PM</p>
                         <p>Dom y Fest 11:30AM - 8:00PM</p>
-                        <a href="https://maps.app.goo.gl/P0O9I8U7Y6T5R4E3W" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/nL1bMF21XAXf1JTaA" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                     <div class="location-item">
                         <h3>RENATA 140</h3>
@@ -562,7 +568,7 @@
                         <p>Lun. a Jue 11:30AM - 10:00PM</p>
                         <p>Vier y Sab 11:30AM - 12:00AM</p>
                         <p>Dom y Fest 11:30AM - 8:00PM</p>
-                        <a href="https://maps.app.goo.gl/M1N2B3V4C5X6Z7A8S" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/nL1bMF21XAXf1JTaA" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                     <div class="location-item">
                         <h3>RENATA CALI</h3>
@@ -570,7 +576,7 @@
                         <p>Barrio San Fernando</p>
                         <p>Lun a Sab 12:00AM - 10:00PM</p>
                         <p>Dom y Fest 12:00AM - 9:00PM</p>
-                        <a href="https://maps.app.goo.gl/L0K9J8H7G6F5D4S3A" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/Mo7K8KMRtLcWegzU9" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                     <div class="location-item">
                         <h3>RENATA MEDELLÍN</h3>
@@ -579,7 +585,7 @@
                         <p>Lun a Jue 12:00PM - 10:00PM</p>
                         <p>Vier y Sab 12:00PM - 12:00AM</p>
                         <p>Dom y Fest 12:00PM - 9:00PM</p>
-                        <a href="https://maps.app.goo.gl/P1O2I3U4Y5T6R7E8W" target="_blank" class="btn btn-map">Ver en Mapa</a>
+                        <a href="https://maps.app.goo.gl/28YDCav9SwdpHXyS6" target="_blank" class="btn btn-map">Ver en Mapa</a>
                     </div>
                 </div>
             </div>
@@ -604,8 +610,8 @@
         <div class="container">
             <p>© 2025 David Lugo.</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/renatatacos/" target="_blank" aria-label="Instagram"><img src="../imagenes/icon_Instagram.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/renatatacos/" target="_blank" aria-label="Facebook"><img src="../imagenes/icons-facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/renatatacos/" target="_blank" aria-label="Instagram"><img src="../Renata/imagenes/icon_Instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/renatatacos/" target="_blank" aria-label="Facebook"><img src="../Renata/imagenes/icons-facebook.png" alt="Facebook"></a>
             </div>
         </div>
     </footer>
