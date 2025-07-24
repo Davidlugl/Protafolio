@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="profile-container">
+        <div class="header-bar">
+            <h3 class="refresh-message">Para nuevo usuario refresca la pantalla</h3>
+        </div>
+        <div class="profile-card">
+            <div class="profile-image-container">
+                <img id="profile-picture" src="placeholder.png" alt="Foto de Perfil">
+            </div>
+            <div class="profile-info">
+                <p class="greeting">Hola, mi nombre es</p>
+                <h2 id="user-name">Cargando...</h2>
+            </div>
+            <div class="icons-container">
+                <div class="icon active" data-info="name">
+                    <img src="https://img.icons8.com/?size=100&id=23265&format=png&color=000000" alt="Icono de Nombre">
+                </div>
+                <div class="icon" data-info="email">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Icono de Correo">
+                </div>
+                <div class="icon" data-info="dob">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/calendar.png" alt="Icono de Calendario">
+                </div>
+                <div class="icon" data-info="location">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/address.png" alt="Icono de Ubicación">
+                </div>
+                <div class="icon" data-info="phone">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Icono de Teléfono">
+                </div>
+                <div class="icon" data-info="login">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/password.png" alt="Icono de Contraseña">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
